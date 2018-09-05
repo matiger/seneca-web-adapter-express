@@ -85,6 +85,7 @@ function handleRoute(seneca, options, request, reply, route, next) {
       args: {
         body: body,
         route: route,
+        headers: request.headers,
         params: request.params,
         query: request.query,
         user: request.user || null
